@@ -8,6 +8,9 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <sonar.projectKey>First</sonar.projectKey>
+        <sonar.host.url>http://52.66.202.186:9000</sonar.host.url>
+        <sonar.login>b1bedb75545605ae840bca289c4f48cb76ef1170</sonar.login>
     </properties>
     <build>
         <plugins>
@@ -16,6 +19,12 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
             </plugin>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.7.0.1746</version>
+            </plugin>
         </plugins>
     </build>
 </project>
+
